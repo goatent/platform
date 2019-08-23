@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const AppContainer = styled.div`
@@ -7,8 +7,7 @@ const AppContainer = styled.div`
 
 interface IAppProps {}
 
-const App: React.FunctionComponent<IAppProps> = props => {
-    const [currentState, setCurrentState] = useState(null);
+const App: React.FunctionComponent<IAppProps> = () => {
     return <AppContainer> this is the app</AppContainer>;
 };
 export default App;
