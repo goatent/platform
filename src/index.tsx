@@ -5,12 +5,13 @@ import { Normalize } from 'styled-normalize';
 import GlobalStyles from './app/styles/GlobalStyles';
 import { ThemeProvider } from 'styled-components';
 import theme from './app/styles/theme';
-import GoatApolloClient from './app/models/GoatApolloClient';
+import AppApolloClient from './app/models/AppApolloClient';
 import { ApolloProvider } from '@apollo/react-hooks';
-
+import './app/translations/i18n';
+import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render(
     <Suspense fallback={<div />}>
-        <ApolloProvider client={GoatApolloClient}>
+        <ApolloProvider client={AppApolloClient}>
             <ThemeProvider theme={theme}>
                 <>
                     <Normalize />
@@ -20,5 +21,5 @@ ReactDOM.render(
             </ThemeProvider>
         </ApolloProvider>
     </Suspense>,
-    document.getElementById('goat-react-id')
+    document.getElementById('react-main-id')
 );

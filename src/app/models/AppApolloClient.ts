@@ -1,7 +1,7 @@
 import ApolloClient from 'apollo-boost';
 
-const GoatApolloClient = new ApolloClient({
+const AppApolloClient = new ApolloClient({
     uri: 'https://48p1r2roz4.sse.codesandbox.io',
 });
 
-export default GoatApolloClient
+export default AppApolloClient

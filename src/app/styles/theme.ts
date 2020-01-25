@@ -9,6 +9,4 @@ const theme = {
 type ThemeType = typeof theme;
 export interface IThemeInterface extends ThemeType {}
 
-
-
 export default theme;
